@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>OTP Verification - AgroConsult</title>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>OTP Verification - AgroConsult</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -34,102 +41,136 @@
             },
         }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-[#0d1b0f] dark:text-white transition-colors duration-300">
-<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
-<!-- Header / TopNavBar -->
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7f3e8] dark:border-[#1e3a20] px-10 py-3 bg-white dark:bg-[#102212]">
-<div class="flex items-center gap-4 text-[#0d1b0f] dark:text-white">
-<div class="size-6 text-primary">
-<span class="material-symbols-outlined text-3xl">potted_plant</span>
-</div>
-<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">AgroConsult</h2>
-</div>
-<div class="flex flex-1 justify-end gap-8">
-<div class="hidden md:flex items-center gap-9">
-<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Products</a>
-<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Consultation</a>
-<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About Us</a>
-</div>
-<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-[#0d1b0f] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all">
-<a href="Login.html"   class="truncate">Back to Login</a>
-</button>
-</div>
-</header>
-<!-- Main Content Area -->
-<main class="flex-1 flex items-center justify-center px-4 py-12">
-<div class="layout-content-container flex flex-col max-w-[500px] w-full bg-white dark:bg-[#162a18] p-8 md:p-12 rounded-xl shadow-sm border border-[#e7f3e8] dark:border-[#1e3a20]">
-<!-- Security Icon -->
-<div class="flex justify-center mb-6">
-<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-4xl">verified_user</span>
-</div>
-</div>
-<!-- Headline -->
-<h1 class="text-[#0d1b0f] dark:text-white tracking-light text-[32px] font-bold leading-tight text-center pb-2">Verify Your Identity</h1>
-<!-- Body Text -->
-<p class="text-[#0d1b0f]/70 dark:text-white/70 text-base font-normal leading-relaxed text-center pb-8">
-                    We've sent a 6-digit verification code to your registered mobile number <span class="font-bold text-[#0d1b0f] dark:text-white">+91 ••••• ••234</span>
-</p>
-<!-- Confirmation Code Inputs -->
-<div class="flex justify-center py-4">
-<fieldset class="relative flex gap-2 md:gap-4">
-<!-- Six individual input boxes -->
-<input autocomplete="one-time-code" class="flex h-14 w-11 md:w-14 text-center text-xl bg-transparent focus:outline-0 focus:ring-2 focus:ring-primary/50 border-0 border-b-2 border-[#cfe7d1] dark:border-[#2d4d31] focus:border-primary text-[#0d1b0f] dark:text-white font-bold transition-all" inputmode="numeric" maxlength="1" pattern="\d*" placeholder="-" type="text"/>
-<input class="flex h-14 w-11 md:w-14 text-center text-xl bg-transparent focus:outline-0 focus:ring-2 focus:ring-primary/50 border-0 border-b-2 border-[#cfe7d1] dark:border-[#2d4d31] focus:border-primary text-[#0d1b0f] dark:text-white font-bold transition-all" inputmode="numeric" maxlength="1" pattern="\d*" placeholder="-" type="text"/>
-<input class="flex h-14 w-11 md:w-14 text-center text-xl bg-transparent focus:outline-0 focus:ring-2 focus:ring-primary/50 border-0 border-b-2 border-[#cfe7d1] dark:border-[#2d4d31] focus:border-primary text-[#0d1b0f] dark:text-white font-bold transition-all" inputmode="numeric" maxlength="1" pattern="\d*" placeholder="-" type="text"/>
-<input class="flex h-14 w-11 md:w-14 text-center text-xl bg-transparent focus:outline-0 focus:ring-2 focus:ring-primary/50 border-0 border-b-2 border-[#cfe7d1] dark:border-[#2d4d31] focus:border-primary text-[#0d1b0f] dark:text-white font-bold transition-all" inputmode="numeric" maxlength="1" pattern="\d*" placeholder="-" type="text"/>
-<input class="flex h-14 w-11 md:w-14 text-center text-xl bg-transparent focus:outline-0 focus:ring-2 focus:ring-primary/50 border-0 border-b-2 border-[#cfe7d1] dark:border-[#2d4d31] focus:border-primary text-[#0d1b0f] dark:text-white font-bold transition-all" inputmode="numeric" maxlength="1" pattern="\d*" placeholder="-" type="text"/>
-<input class="flex h-14 w-11 md:w-14 text-center text-xl bg-transparent focus:outline-0 focus:ring-2 focus:ring-primary/50 border-0 border-b-2 border-[#cfe7d1] dark:border-[#2d4d31] focus:border-primary text-[#0d1b0f] dark:text-white font-bold transition-all" inputmode="numeric" maxlength="1" pattern="\d*" placeholder="-" type="text"/>
-</fieldset>
-</div>
-<!-- Timer Section -->
-<div class="flex flex-col items-center py-8">
-<p class="text-sm font-medium text-[#0d1b0f]/60 dark:text-white/60 mb-3">Didn't receive the code?</p>
-<div class="flex gap-4">
-<div class="flex flex-col items-center min-w-[64px]">
-<div class="flex h-12 w-14 items-center justify-center rounded-lg bg-[#e7f3e8] dark:bg-[#1e3a20]">
-<p class="text-[#0d1b0f] dark:text-white text-lg font-bold">00</p>
-</div>
-<p class="text-[#0d1b0f]/50 dark:text-white/50 text-[10px] uppercase tracking-wider mt-1">Min</p>
-</div>
-<div class="flex flex-col items-center min-w-[64px]">
-<div class="flex h-12 w-14 items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/10">
-<p class="text-primary text-lg font-bold">59</p>
-</div>
-<p class="text-[#0d1b0f]/50 dark:text-white/50 text-[10px] uppercase tracking-wider mt-1">Sec</p>
-</div>
-</div>
-</div>
-<!-- Action Button -->
-<div class="flex flex-col gap-4">
-<a href="New password.html" class="w-full flex h-14 items-center justify-center rounded-xl bg-primary text-[#0d1b0f] text-lg font-bold tracking-wide hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-[0.98]">
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-[#0d1b0f] dark:text-white transition-colors duration-300">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Header / TopNavBar -->
+        <header
+            class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7f3e8] dark:border-[#1e3a20] px-10 py-3 bg-white dark:bg-[#102212]">
+            <div class="flex items-center gap-4 text-[#0d1b0f] dark:text-white">
+                <div class="size-6 text-primary">
+                    <span class="material-symbols-outlined text-3xl">potted_plant</span>
+                </div>
+                <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">AgroConsult</h2>
+            </div>
+            <div class="flex flex-1 justify-end gap-8">
+                <div class="hidden md:flex items-center gap-9">
+                    <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                        href="#">Products</a>
+                    <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                        href="#">Consultation</a>
+                    <a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About
+                        Us</a>
+                </div>
+                <button
+                    class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-[#0d1b0f] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all">
+                    <a href="Login.html" class="truncate">Back to Login</a>
+                </button>
+            </div>
+        </header>
+        <!-- Main Content Area -->
+        <main class="flex-1 flex items-center justify-center px-4 py-12">
+            <div
+                class="layout-content-container flex flex-col max-w-[500px] w-full bg-white dark:bg-[#162a18] p-8 md:p-12 rounded-xl shadow-sm border border-[#e7f3e8] dark:border-[#1e3a20]">
+                <!-- Security Icon -->
+                <div class="flex justify-center mb-6">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined text-4xl">verified_user</span>
+                    </div>
+                </div>
+                <!-- Headline -->
+                <h1
+                    class="text-[#0d1b0f] dark:text-white tracking-light text-[32px] font-bold leading-tight text-center pb-2">
+                    Verify Your Identity</h1>
+                <!-- Body Text -->
+                <p class="text-[#0d1b0f]/70 dark:text-white/70 text-base font-normal leading-relaxed text-center pb-8">
+                    We've sent a 6-digit verification code to your registered mobile number <span
+                        class="font-bold text-[#0d1b0f] dark:text-white">+91 ••••• ••234</span>
+                </p>
+                <!-- Confirmation Code Inputs -->
+                <div class="flex justify-center py-4">
+                    <fieldset class="relative flex gap-2 md:gap-4">
+                        <!-- Six individual input boxes -->
+                        <input autocomplete="one-time-code"
+                            class="flex h-14 w-11 md:w-14 text-center text-xl bg-transparent focus:outline-0 focus:ring-2 focus:ring-primary/50 border-0 border-b-2 border-[#cfe7d1] dark:border-[#2d4d31] focus:border-primary text-[#0d1b0f] dark:text-white font-bold transition-all"
+                            inputmode="numeric" maxlength="1" pattern="\d*" placeholder="-" type="text" />
+                        <input
+                            class="flex h-14 w-11 md:w-14 text-center text-xl bg-transparent focus:outline-0 focus:ring-2 focus:ring-primary/50 border-0 border-b-2 border-[#cfe7d1] dark:border-[#2d4d31] focus:border-primary text-[#0d1b0f] dark:text-white font-bold transition-all"
+                            inputmode="numeric" maxlength="1" pattern="\d*" placeholder="-" type="text" />
+                        <input
+                            class="flex h-14 w-11 md:w-14 text-center text-xl bg-transparent focus:outline-0 focus:ring-2 focus:ring-primary/50 border-0 border-b-2 border-[#cfe7d1] dark:border-[#2d4d31] focus:border-primary text-[#0d1b0f] dark:text-white font-bold transition-all"
+                            inputmode="numeric" maxlength="1" pattern="\d*" placeholder="-" type="text" />
+                        <input
+                            class="flex h-14 w-11 md:w-14 text-center text-xl bg-transparent focus:outline-0 focus:ring-2 focus:ring-primary/50 border-0 border-b-2 border-[#cfe7d1] dark:border-[#2d4d31] focus:border-primary text-[#0d1b0f] dark:text-white font-bold transition-all"
+                            inputmode="numeric" maxlength="1" pattern="\d*" placeholder="-" type="text" />
+                        <input
+                            class="flex h-14 w-11 md:w-14 text-center text-xl bg-transparent focus:outline-0 focus:ring-2 focus:ring-primary/50 border-0 border-b-2 border-[#cfe7d1] dark:border-[#2d4d31] focus:border-primary text-[#0d1b0f] dark:text-white font-bold transition-all"
+                            inputmode="numeric" maxlength="1" pattern="\d*" placeholder="-" type="text" />
+                        <input
+                            class="flex h-14 w-11 md:w-14 text-center text-xl bg-transparent focus:outline-0 focus:ring-2 focus:ring-primary/50 border-0 border-b-2 border-[#cfe7d1] dark:border-[#2d4d31] focus:border-primary text-[#0d1b0f] dark:text-white font-bold transition-all"
+                            inputmode="numeric" maxlength="1" pattern="\d*" placeholder="-" type="text" />
+                    </fieldset>
+                </div>
+                <!-- Timer Section -->
+                <div class="flex flex-col items-center py-8">
+                    <p class="text-sm font-medium text-[#0d1b0f]/60 dark:text-white/60 mb-3">Didn't receive the code?
+                    </p>
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center min-w-[64px]">
+                            <div
+                                class="flex h-12 w-14 items-center justify-center rounded-lg bg-[#e7f3e8] dark:bg-[#1e3a20]">
+                                <p class="text-[#0d1b0f] dark:text-white text-lg font-bold">00</p>
+                            </div>
+                            <p class="text-[#0d1b0f]/50 dark:text-white/50 text-[10px] uppercase tracking-wider mt-1">
+                                Min</p>
+                        </div>
+                        <div class="flex flex-col items-center min-w-[64px]">
+                            <div
+                                class="flex h-12 w-14 items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/10">
+                                <p class="text-primary text-lg font-bold">59</p>
+                            </div>
+                            <p class="text-[#0d1b0f]/50 dark:text-white/50 text-[10px] uppercase tracking-wider mt-1">
+                                Sec</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Action Button -->
+                <div class="flex flex-col gap-4">
+                    <a href="New password.html"
+                        class="w-full flex h-14 items-center justify-center rounded-xl bg-primary text-[#0d1b0f] text-lg font-bold tracking-wide hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-[0.98]">
                         Verify and Proceed
-</a>
-<button class="w-full h-12 flex items-center justify-center text-primary font-bold text-sm hover:underline cursor-not-allowed opacity-50" disabled="">
+                    </a>
+                    <button
+                        class="w-full h-12 flex items-center justify-center text-primary font-bold text-sm hover:underline cursor-not-allowed opacity-50"
+                        disabled="">
                         Resend Code
                     </button>
-</div>
-<!-- Help / Support Footer -->
-<div class="mt-8 pt-6 border-t border-[#e7f3e8] dark:border-[#1e3a20] flex flex-col items-center gap-2">
-<p class="text-xs text-[#0d1b0f]/50 dark:text-white/40 text-center">
-                        Need help? Contact our agro-expert support at <br/>
-<a class="text-primary font-medium" href="mailto:support@agroconsult.com">support@agroconsult.com</a>
-</p>
-</div>
-</div>
-</main>
-<!-- Background Decoration (Leaf pattern concept) -->
-<div class="fixed bottom-0 right-0 p-12 opacity-5 pointer-events-none">
-<span class="material-symbols-outlined text-[300px] text-primary rotate-12">eco</span>
-</div>
-<div class="fixed top-20 left-0 p-12 opacity-5 pointer-events-none">
-<span class="material-symbols-outlined text-[200px] text-primary -rotate-12">agriculture</span>
-</div>
-</div>
-</body></html>
+                </div>
+                <!-- Help / Support Footer -->
+                <div class="mt-8 pt-6 border-t border-[#e7f3e8] dark:border-[#1e3a20] flex flex-col items-center gap-2">
+                    <p class="text-xs text-[#0d1b0f]/50 dark:text-white/40 text-center">
+                        Need help? Contact our agro-expert support at <br />
+                        <a class="text-primary font-medium"
+                            href="mailto:support@agroconsult.com">support@agroconsult.com</a>
+                    </p>
+                </div>
+            </div>
+        </main>
+        <!-- Background Decoration (Leaf pattern concept) -->
+        <div class="fixed bottom-0 right-0 p-12 opacity-5 pointer-events-none">
+            <span class="material-symbols-outlined text-[300px] text-primary rotate-12">eco</span>
+        </div>
+        <div class="fixed top-20 left-0 p-12 opacity-5 pointer-events-none">
+            <span class="material-symbols-outlined text-[200px] text-primary -rotate-12">agriculture</span>
+        </div>
+    </div>
+</body>
+
+</html>

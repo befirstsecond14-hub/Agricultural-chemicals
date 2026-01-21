@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Detailed Product Information - AgroConsult</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Detailed Product Information - AgroConsult</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -20,314 +26,391 @@
                     fontFamily: {
                         "display": ["Manrope", "sans-serif"]
                     },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
                 },
             },
         }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         .material-symbols-fill {
             font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
     </style>
 </head>
+
 <body class="bg-background-light dark:bg-background-dark font-display text-[#0d1b0f] dark:text-white antialiased">
-<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
-<div class="layout-container flex h-full grow flex-col">
-<!-- Top Navigation Bar -->
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7f3e8] dark:border-[#1e3a20] px-10 py-3 bg-white dark:bg-[#102212] sticky top-0 z-50">
-<div class="flex items-center gap-8">
-<div class="flex items-center gap-4 text-[#0d1b0f] dark:text-white">
-<div class="size-8 text-primary">
-<span class="material-symbols-outlined text-4xl">agriculture</span>
-</div>
-<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">AgroConsult</h2>
-</div>
-<nav class="hidden md:flex items-center gap-9">
-<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Shop</a>
-<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Consultation</a>
-<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Safety Guides</a>
-<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About Us</a>
-</nav>
-</div>
-<div class="flex flex-1 justify-end gap-8">
-<label class="flex flex-col min-w-40 h-10 max-w-64">
-<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
-<div class="text-[#4c9a52] flex border-none bg-[#e7f3e8] dark:bg-[#1e3a20] items-center justify-center pl-4 rounded-l-lg" data-icon="search">
-<span class="material-symbols-outlined">search</span>
-</div>
-<input class="form-input flex w-full min-w-0 flex-1 border-none bg-[#e7f3e8] dark:bg-[#1e3a20] text-[#0d1b0f] dark:text-white focus:ring-0 h-full placeholder:text-[#4c9a52] px-4 rounded-r-lg pl-2 text-base font-normal leading-normal" placeholder="Search products..." value=""/>
-</div>
-</label>
-<div class="flex gap-2">
-<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-[#e7f3e8] dark:bg-[#1e3a20] text-[#0d1b0f] dark:text-white">
-<span class="material-symbols-outlined">shopping_cart</span>
-</button>
-<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-[#e7f3e8] dark:bg-[#1e3a20] text-[#0d1b0f] dark:text-white">
-<span class="material-symbols-outlined">person</span>
-</button>
-</div>
-</div>
-</header>
-<main class="max-w-[1200px] mx-auto w-full px-4 py-6">
-<!-- Breadcrumbs -->
-<div class="flex flex-wrap gap-2 mb-6">
-<a class="text-[#4c9a52] text-sm font-medium leading-normal flex items-center gap-1" href="#">
-<span class="material-symbols-outlined text-xs">home</span> Home
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Top Navigation Bar -->
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7f3e8] dark:border-[#1e3a20] px-10 py-3 bg-white dark:bg-[#102212] sticky top-0 z-50">
+                <div class="flex items-center gap-8">
+                    <div class="flex items-center gap-4 text-[#0d1b0f] dark:text-white">
+                        <div class="size-8 text-primary">
+                            <span class="material-symbols-outlined text-4xl">agriculture</span>
+                        </div>
+                        <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">AgroConsult</h2>
+                    </div>
+                    <nav class="hidden md:flex items-center gap-9">
+                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="#">Shop</a>
+                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="#">Consultation</a>
+                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="#">Safety Guides</a>
+                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="#">About Us</a>
+                    </nav>
+                </div>
+                <div class="flex flex-1 justify-end gap-8">
+                    <label class="flex flex-col min-w-40 h-10 max-w-64">
+                        <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                            <div class="text-[#4c9a52] flex border-none bg-[#e7f3e8] dark:bg-[#1e3a20] items-center justify-center pl-4 rounded-l-lg"
+                                data-icon="search">
+                                <span class="material-symbols-outlined">search</span>
+                            </div>
+                            <input
+                                class="form-input flex w-full min-w-0 flex-1 border-none bg-[#e7f3e8] dark:bg-[#1e3a20] text-[#0d1b0f] dark:text-white focus:ring-0 h-full placeholder:text-[#4c9a52] px-4 rounded-r-lg pl-2 text-base font-normal leading-normal"
+                                placeholder="Search products..." value="" />
+                        </div>
+                    </label>
+                    <div class="flex gap-2">
+                        <button
+                            class="flex items-center justify-center rounded-lg h-10 w-10 bg-[#e7f3e8] dark:bg-[#1e3a20] text-[#0d1b0f] dark:text-white">
+                            <span class="material-symbols-outlined">shopping_cart</span>
+                        </button>
+                        <button
+                            class="flex items-center justify-center rounded-lg h-10 w-10 bg-[#e7f3e8] dark:bg-[#1e3a20] text-[#0d1b0f] dark:text-white">
+                            <span class="material-symbols-outlined">person</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <main class="max-w-[1200px] mx-auto w-full px-4 py-6">
+                <!-- Breadcrumbs -->
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <a class="text-[#4c9a52] text-sm font-medium leading-normal flex items-center gap-1" href="#">
+                        <span class="material-symbols-outlined text-xs">home</span> Home
                     </a>
-<span class="text-[#4c9a52] text-sm font-medium">/</span>
-<a class="text-[#4c9a52] text-sm font-medium leading-normal" href="#">Pesticides</a>
-<span class="text-[#4c9a52] text-sm font-medium">/</span>
-<span class="text-[#0d1b0f] dark:text-white text-sm font-medium">EcoShield Pro</span>
-</div>
-<!-- Hero Product Section -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-12">
-<!-- Left: Gallery -->
-<div class="lg:col-span-7 flex flex-col gap-4">
-<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-xl shadow-sm border border-gray-100 dark:border-gray-800" data-alt="Main product view of EcoShield Pro pesticide bottle" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtAh-IquckKI-28NEs8LTXsAaxwX5bONTtJPDop7laIFzlyaLjIpw2VUVo-5XE_ynWi_MnjZ2T2FXVaGu0-KPYdh71e6SVMXWBERxlH2ZjOZ7gGZRCQ9OzRwMFdtKoRVWwQZH_NKRDc-o55zlvI4sEpKtsppFSAdnhXbAC8I2Acq_W2VHXpbfklLyIN6HbpP6BCIhprSULU4G4qqgYLK6GWzGGrpeRKgTTw6yS5jDoKo50QO9kWpJ3WA9SlQXbUegWJADqWrbe-pM");'>
-</div>
-<div class="grid grid-cols-4 gap-4">
-<div class="aspect-square bg-center bg-no-repeat bg-cover rounded-lg ring-2 ring-primary cursor-pointer" data-alt="Front view of EcoShield pesticide packaging" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDi3Cu9718dKVkqSXDlq-A-180hY_qeZlR-b6nIHeHn4KP39wdvY0VNFXdHdFFupeQ8fX8aE43ium4XYQgv7HiZlY0WrTmrCSxm71-Llnu-XIn2u0Th-L2l_MtMdlZKmea93DFL-oBgj4dCHZVCHTzUvy-dVYXoBvHae5PEahLrvneO-831UIvvYqdHDtnFhWPw3ei3PilfZvUbg52i3q4gRDFckwINENdxiLj-X4bXJBsvouh1p1ubn97p5pZGY94OfeUoNOhxU3s");'></div>
-<div class="aspect-square bg-center bg-no-repeat bg-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity cursor-pointer" data-alt="Detailed view of product back label with safety warnings" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1gqna9rtCDbmDBWY5fek6RRyd4eF-55F9XUDLKGwwWZBY-RRclwMWaLNAwUTYJp1829ifHsDeWDMr0ItPNHD_Q4ykTwIhmlBMjXNSYjR8__qz0MWFXw8mMMVGPBswI2ks7fg4So53lpNRtPaAIrQG_UL7EcPSjctVt7geQPtP6bdzLVWhM1k_bxuodl_vzzL7ikqIFEvi0slvNmlksx2_7DJf0Z9qSGXtw-zN2EaqeGfd_YjFtEDhJAQrviH8jibd6pYcOiKOLYA");'></div>
-<div class="aspect-square bg-center bg-no-repeat bg-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity cursor-pointer" data-alt="Farmer applying product to tomato crops" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBKVFJmgGmH5LoFv6tAc4WUkMd7k-Igcff7KjNU-c5nn0IcUJLbFm0DdVkusiFwoh6P67zLqvbIatg1LdBqux2t83snasjXgA6mfjUc8KMqrd0kV2x8GqBVrcbed9ZTm2Zm4KynbCQ_uvqqxJQ7EvmViUiijFRdlBd_jv1xKm8ywJqSTZKyQLc8czmhUl8IvlYRSKTGkZTW9vWmU1qXBbghoET1_hpR2Isy2OYa6fLf-ICH41QMrEofqvqhKfbjqI1u-FP-pndS4Co");'></div>
-<div class="aspect-square bg-center bg-no-repeat bg-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity cursor-pointer flex items-center justify-center bg-black/40 text-white font-bold" data-alt="Placeholder for product video demonstration" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCXNy6oRHF7dgk8w0f69_rhnhlVRej_huSmQD4TQmICLAlhd6H3UT_hECCEvCs1QQumBaBokvTe7hPeKomMPTn1wBA9BtFYOUk13Ir7UNOtIAqrFM9vzqPM_Vz2nN-XZQ7-hYYBnjDcPGBgU2aFOBg-OSLxyh79VpFL1EgglBLz3L7jPep--0rVNB1B-PmI7-g7fOATXnpmBwMzJ-MNMbQw9zEVdm36l9VoeDKnwpLrEfOFfpVuAZn_qvOVemJ6KYXcEfOaz_9XNoc");'>
-<span class="material-symbols-outlined text-4xl">play_circle</span>
-</div>
-</div>
-</div>
-<!-- Right: Product Info & Buy Actions -->
-<div class="lg:col-span-5 flex flex-col">
-<div class="mb-2">
-<span class="px-2 py-1 bg-primary/20 text-green-700 dark:text-primary text-xs font-bold rounded uppercase tracking-wider">In Stock</span>
-</div>
-<h1 class="text-[#0d1b0f] dark:text-white text-[32px] font-bold leading-tight mb-2">EcoShield Pro Pesticide - 1L</h1>
-<p class="text-[#4c9a52] mb-4">Broad-spectrum eco-friendly protection for organic farming</p>
-<div class="flex items-center gap-3 mb-6">
-<div class="flex text-primary">
-<span class="material-symbols-outlined material-symbols-fill">star</span>
-<span class="material-symbols-outlined material-symbols-fill">star</span>
-<span class="material-symbols-outlined material-symbols-fill">star</span>
-<span class="material-symbols-outlined material-symbols-fill">star</span>
-<span class="material-symbols-outlined">star_half</span>
-</div>
-<span class="text-sm font-medium text-[#0d1b0f] dark:text-gray-300">(124 verified reviews)</span>
-</div>
-<div class="flex items-baseline gap-2 mb-8">
-<span class="text-4xl font-black text-primary">$49.99</span>
-<span class="text-gray-400 line-through text-lg">$64.00</span>
-</div>
-<div class="flex flex-col gap-4">
-<button class="w-full bg-primary hover:bg-[#11d821] text-white py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 transition-transform active:scale-[0.98]">
-<span class="material-symbols-outlined">shopping_bag</span> Buy Now
+                    <span class="text-[#4c9a52] text-sm font-medium">/</span>
+                    <a class="text-[#4c9a52] text-sm font-medium leading-normal" href="#">Pesticides</a>
+                    <span class="text-[#4c9a52] text-sm font-medium">/</span>
+                    <span class="text-[#0d1b0f] dark:text-white text-sm font-medium">EcoShield Pro</span>
+                </div>
+                <!-- Hero Product Section -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-12">
+                    <!-- Left: Gallery -->
+                    <div class="lg:col-span-7 flex flex-col gap-4">
+                        <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-xl shadow-sm border border-gray-100 dark:border-gray-800"
+                            data-alt="Main product view of EcoShield Pro pesticide bottle"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtAh-IquckKI-28NEs8LTXsAaxwX5bONTtJPDop7laIFzlyaLjIpw2VUVo-5XE_ynWi_MnjZ2T2FXVaGu0-KPYdh71e6SVMXWBERxlH2ZjOZ7gGZRCQ9OzRwMFdtKoRVWwQZH_NKRDc-o55zlvI4sEpKtsppFSAdnhXbAC8I2Acq_W2VHXpbfklLyIN6HbpP6BCIhprSULU4G4qqgYLK6GWzGGrpeRKgTTw6yS5jDoKo50QO9kWpJ3WA9SlQXbUegWJADqWrbe-pM");'>
+                        </div>
+                        <div class="grid grid-cols-4 gap-4">
+                            <div class="aspect-square bg-center bg-no-repeat bg-cover rounded-lg ring-2 ring-primary cursor-pointer"
+                                data-alt="Front view of EcoShield pesticide packaging"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDi3Cu9718dKVkqSXDlq-A-180hY_qeZlR-b6nIHeHn4KP39wdvY0VNFXdHdFFupeQ8fX8aE43ium4XYQgv7HiZlY0WrTmrCSxm71-Llnu-XIn2u0Th-L2l_MtMdlZKmea93DFL-oBgj4dCHZVCHTzUvy-dVYXoBvHae5PEahLrvneO-831UIvvYqdHDtnFhWPw3ei3PilfZvUbg52i3q4gRDFckwINENdxiLj-X4bXJBsvouh1p1ubn97p5pZGY94OfeUoNOhxU3s");'>
+                            </div>
+                            <div class="aspect-square bg-center bg-no-repeat bg-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity cursor-pointer"
+                                data-alt="Detailed view of product back label with safety warnings"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1gqna9rtCDbmDBWY5fek6RRyd4eF-55F9XUDLKGwwWZBY-RRclwMWaLNAwUTYJp1829ifHsDeWDMr0ItPNHD_Q4ykTwIhmlBMjXNSYjR8__qz0MWFXw8mMMVGPBswI2ks7fg4So53lpNRtPaAIrQG_UL7EcPSjctVt7geQPtP6bdzLVWhM1k_bxuodl_vzzL7ikqIFEvi0slvNmlksx2_7DJf0Z9qSGXtw-zN2EaqeGfd_YjFtEDhJAQrviH8jibd6pYcOiKOLYA");'>
+                            </div>
+                            <div class="aspect-square bg-center bg-no-repeat bg-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity cursor-pointer"
+                                data-alt="Farmer applying product to tomato crops"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBKVFJmgGmH5LoFv6tAc4WUkMd7k-Igcff7KjNU-c5nn0IcUJLbFm0DdVkusiFwoh6P67zLqvbIatg1LdBqux2t83snasjXgA6mfjUc8KMqrd0kV2x8GqBVrcbed9ZTm2Zm4KynbCQ_uvqqxJQ7EvmViUiijFRdlBd_jv1xKm8ywJqSTZKyQLc8czmhUl8IvlYRSKTGkZTW9vWmU1qXBbghoET1_hpR2Isy2OYa6fLf-ICH41QMrEofqvqhKfbjqI1u-FP-pndS4Co");'>
+                            </div>
+                            <div class="aspect-square bg-center bg-no-repeat bg-cover rounded-lg opacity-70 hover:opacity-100 transition-opacity cursor-pointer flex items-center justify-center bg-black/40 text-white font-bold"
+                                data-alt="Placeholder for product video demonstration"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCXNy6oRHF7dgk8w0f69_rhnhlVRej_huSmQD4TQmICLAlhd6H3UT_hECCEvCs1QQumBaBokvTe7hPeKomMPTn1wBA9BtFYOUk13Ir7UNOtIAqrFM9vzqPM_Vz2nN-XZQ7-hYYBnjDcPGBgU2aFOBg-OSLxyh79VpFL1EgglBLz3L7jPep--0rVNB1B-PmI7-g7fOATXnpmBwMzJ-MNMbQw9zEVdm36l9VoeDKnwpLrEfOFfpVuAZn_qvOVemJ6KYXcEfOaz_9XNoc");'>
+                                <span class="material-symbols-outlined text-4xl">play_circle</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right: Product Info & Buy Actions -->
+                    <div class="lg:col-span-5 flex flex-col">
+                        <div class="mb-2">
+                            <span
+                                class="px-2 py-1 bg-primary/20 text-green-700 dark:text-primary text-xs font-bold rounded uppercase tracking-wider">In
+                                Stock</span>
+                        </div>
+                        <h1 class="text-[#0d1b0f] dark:text-white text-[32px] font-bold leading-tight mb-2">EcoShield
+                            Pro Pesticide - 1L</h1>
+                        <p class="text-[#4c9a52] mb-4">Broad-spectrum eco-friendly protection for organic farming</p>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="flex text-primary">
+                                <span class="material-symbols-outlined material-symbols-fill">star</span>
+                                <span class="material-symbols-outlined material-symbols-fill">star</span>
+                                <span class="material-symbols-outlined material-symbols-fill">star</span>
+                                <span class="material-symbols-outlined material-symbols-fill">star</span>
+                                <span class="material-symbols-outlined">star_half</span>
+                            </div>
+                            <span class="text-sm font-medium text-[#0d1b0f] dark:text-gray-300">(124 verified
+                                reviews)</span>
+                        </div>
+                        <div class="flex items-baseline gap-2 mb-8">
+                            <span class="text-4xl font-black text-primary">$49.99</span>
+                            <span class="text-gray-400 line-through text-lg">$64.00</span>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <button
+                                class="w-full bg-primary hover:bg-[#11d821] text-white py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 transition-transform active:scale-[0.98]">
+                                <span class="material-symbols-outlined">shopping_bag</span> Buy Now
                             </button>
-<button class="w-full bg-white dark:bg-[#1e3a20] border-2 border-primary text-primary py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 hover:bg-primary/10 transition-colors">
-<span class="material-symbols-outlined">chat_bubble</span> Chat with Agronomist
+                            <button
+                                class="w-full bg-white dark:bg-[#1e3a20] border-2 border-primary text-primary py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 hover:bg-primary/10 transition-colors">
+                                <span class="material-symbols-outlined">chat_bubble</span> Chat with Agronomist
                             </button>
-</div>
-<!-- Highlights -->
-<div class="mt-8 grid grid-cols-2 gap-4">
-<div class="flex items-start gap-3 p-3 bg-white dark:bg-[#102212] rounded-lg border border-gray-100 dark:border-gray-800">
-<span class="material-symbols-outlined text-primary">verified_user</span>
-<div>
-<p class="text-sm font-bold">Safe for Bees</p>
-<p class="text-xs text-gray-500">Non-toxic to pollinators</p>
-</div>
-</div>
-<div class="flex items-start gap-3 p-3 bg-white dark:bg-[#102212] rounded-lg border border-gray-100 dark:border-gray-800">
-<span class="material-symbols-outlined text-primary">local_shipping</span>
-<div>
-<p class="text-sm font-bold">Fast Delivery</p>
-<p class="text-xs text-gray-500">2-3 business days</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Usage Instructions Section -->
-<section class="mb-12 bg-white dark:bg-[#102212] rounded-2xl p-8 border border-[#e7f3e8] dark:border-[#1e3a20]">
-<div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-primary text-3xl">menu_book</span>
-<h2 class="text-2xl font-bold">Usage Instructions and Mixing Ratios</h2>
-</div>
-<div class="overflow-x-auto mb-8">
-<table class="w-full border-collapse">
-<thead>
-<tr class="bg-[#e7f3e8] dark:bg-[#1e3a20]">
-<th class="p-4 text-left font-bold rounded-tl-lg">Crop Type</th>
-<th class="p-4 text-left font-bold">Mixing Ratio (ml/L)</th>
-<th class="p-4 text-left font-bold">Application Frequency</th>
-<th class="p-4 text-left font-bold rounded-tr-lg">Pre-Harvest Interval</th>
-</tr>
-</thead>
-<tbody class="divide-y divide-gray-100 dark:divide-gray-800">
-<tr>
-<td class="p-4 font-medium">Vegetables (Leafy)</td>
-<td class="p-4">2.5 ml / Liter</td>
-<td class="p-4">Every 14 days</td>
-<td class="p-4">3 Days</td>
-</tr>
-<tr>
-<td class="p-4 font-medium">Fruit Trees</td>
-<td class="p-4">5.0 ml / Liter</td>
-<td class="p-4">Every 21 days</td>
-<td class="p-4">7 Days</td>
-</tr>
-<tr>
-<td class="p-4 font-medium">Cereal Crops</td>
-<td class="p-4">1.5 ml / Liter</td>
-<td class="p-4">Once per season</td>
-<td class="p-4">15 Days</td>
-</tr>
-</tbody>
-</table>
-</div>
-<!-- Safety Icons -->
-<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-<div class="flex flex-col items-center text-center p-4 bg-background-light dark:bg-background-dark rounded-xl">
-<span class="material-symbols-outlined text-4xl text-primary mb-2">back_hand</span>
-<p class="font-bold text-sm">Wear Gloves</p>
-<p class="text-xs text-gray-500">Avoid direct skin contact</p>
-</div>
-<div class="flex flex-col items-center text-center p-4 bg-background-light dark:bg-background-dark rounded-xl">
-<span class="material-symbols-outlined text-4xl text-primary mb-2">masks</span>
-<p class="font-bold text-sm">Use Mask</p>
-<p class="text-xs text-gray-500">Protect from inhalation</p>
-</div>
-<div class="flex flex-col items-center text-center p-4 bg-background-light dark:bg-background-dark rounded-xl">
-<span class="material-symbols-outlined text-4xl text-primary mb-2">thermostat</span>
-<p class="font-bold text-sm">Cool Storage</p>
-<p class="text-xs text-gray-500">Keep below 25°C</p>
-</div>
-<div class="flex flex-col items-center text-center p-4 bg-background-light dark:bg-background-dark rounded-xl">
-<span class="material-symbols-outlined text-4xl text-primary mb-2">science</span>
-<p class="font-bold text-sm">Dilution Only</p>
-<p class="text-xs text-gray-500">Do not use concentrated</p>
-</div>
-</div>
-</section>
-<!-- Reviews Section -->
-<section class="mb-12">
-<div class="flex items-center justify-between mb-8 px-4">
-<h2 class="text-2xl font-bold">Customer Reviews</h2>
-<button class="bg-[#e7f3e8] dark:bg-[#1e3a20] text-[#0d1b0f] dark:text-white px-6 py-2 rounded-lg font-bold hover:bg-primary/20 transition-colors">Write a Review</button>
-</div>
-<div class="flex flex-col md:flex-row gap-x-12 gap-y-10 p-6 bg-white dark:bg-[#102212] rounded-2xl border border-gray-100 dark:border-gray-800">
-<!-- Rating Summary Box -->
-<div class="flex flex-col gap-2 min-w-[180px]">
-<p class="text-[#0d1b0f] dark:text-white text-6xl font-black leading-tight tracking-[-0.033em]">4.8</p>
-<div class="flex gap-1 text-primary">
-<span class="material-symbols-outlined material-symbols-fill">star</span>
-<span class="material-symbols-outlined material-symbols-fill">star</span>
-<span class="material-symbols-outlined material-symbols-fill">star</span>
-<span class="material-symbols-outlined material-symbols-fill">star</span>
-<span class="material-symbols-outlined material-symbols-fill">star</span>
-</div>
-<p class="text-base font-medium text-gray-500">124 reviews</p>
-</div>
-<!-- Progress Bars -->
-<div class="grid flex-1 grid-cols-[20px_1fr_40px] items-center gap-y-3">
-<p class="text-sm font-medium">5</p>
-<div class="flex h-2.5 flex-1 overflow-hidden rounded-full bg-[#cfe7d1] dark:bg-[#1e3a20]"><div class="rounded-full bg-primary" style="width: 90%;"></div></div>
-<p class="text-[#4c9a52] text-sm font-bold text-right">90%</p>
-<p class="text-sm font-medium">4</p>
-<div class="flex h-2.5 flex-1 overflow-hidden rounded-full bg-[#cfe7d1] dark:bg-[#1e3a20]"><div class="rounded-full bg-primary" style="width: 5%;"></div></div>
-<p class="text-[#4c9a52] text-sm font-bold text-right">5%</p>
-<p class="text-sm font-medium">3</p>
-<div class="flex h-2.5 flex-1 overflow-hidden rounded-full bg-[#cfe7d1] dark:bg-[#1e3a20]"><div class="rounded-full bg-primary" style="width: 2%;"></div></div>
-<p class="text-[#4c9a52] text-sm font-bold text-right">2%</p>
-<p class="text-sm font-medium">2</p>
-<div class="flex h-2.5 flex-1 overflow-hidden rounded-full bg-[#cfe7d1] dark:bg-[#1e3a20]"><div class="rounded-full bg-primary" style="width: 1%;"></div></div>
-<p class="text-[#4c9a52] text-sm font-bold text-right">1%</p>
-<p class="text-sm font-medium">1</p>
-<div class="flex h-2.5 flex-1 overflow-hidden rounded-full bg-[#cfe7d1] dark:bg-[#1e3a20]"><div class="rounded-full bg-primary" style="width: 2%;"></div></div>
-<p class="text-[#4c9a52] text-sm font-bold text-right">2%</p>
-</div>
-</div>
-<!-- Review Photos Gallery -->
-<div class="mt-8">
-<h3 class="font-bold mb-4 px-4">Photos from farmers</h3>
-<div class="grid grid-cols-4 md:grid-cols-8 gap-3 px-4">
-<div class="aspect-square rounded-lg bg-cover bg-center border-2 border-transparent hover:border-primary cursor-pointer transition-all" data-alt="User photo of treated corn field" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDhLkPfzgUO-hdTFJHHTJEu-D46RO6UhwmZHgCyua3A2fXDzxtHhEVhQ9U4z5sylFbY1WKoCFNhFbHCSYBJqVDKR2efmZTNsirTBS0jMblUXVfvd8LgVndpSSi1ssvSr9jz4ZvFww1TCvsaFuWuQTfsn6DVP8Qsn_N6abRKhKuAYPdEubcmtUMTAVgS8EaZ6suDlIEcSLyTdDEn9tqYI4A_z_xSRQ5X4p2XhuUBHibjj-txv6TASbPVYg1GdpNSK-P7c1E44UkA1Kk");'></div>
-<div class="aspect-square rounded-lg bg-cover bg-center border-2 border-transparent hover:border-primary cursor-pointer transition-all" data-alt="User photo of large organic garden" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBK_v_snKTEM-XU2zoTdH5YjecaNSGemiiiU7ti_uvLpifJyqYypcYH7jTYbscVzkk6_4-qGEC1qEl9yTYU00Y_KUYRUaaINc3ziVMH08lWDkoQrzkpme__rd5Hh0SZsxXQnwztnRaPa1od-e7fmmPEhHnDSX1YDc9RBjimVLRqMiPGl7EyuhrOF4-hNPfzeASsWPdlticUHPqVDMd2B_3VVbYneqNurV0jd1dVVkJCzl8m3NF0Ll0ZoD0Tp8khfpjNJgjvZ4vA48E");'></div>
-<div class="aspect-square rounded-lg bg-cover bg-center border-2 border-transparent hover:border-primary cursor-pointer transition-all" data-alt="User photo of healthy tomato plants" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuArveL3FD8vwcalmBk8uVCiCOoNFisjuXO1pJsYtEMZuD4Xi76b__lpBoofFhmwGjey9QT-BSnOuJxRoSWAlF1_wd_E5zaGF1BbuoCXK4-ArPFHgHX2dkn9lG-NwJkYGHzUrIaz_EKmUXA_aTIeJ7QGYGEwytbRJ-VPTDTAumV0w92rpAn7RXihsEWx80tulDqj9gQCJU5qHA4DdjEtbR6HK32Eu_34y7I23Rc4kQAhFZB_iGRvl_0soLlzPcw8iiQQERESMaZzGHU");'></div>
-<div class="aspect-square rounded-lg bg-cover bg-center border-2 border-transparent hover:border-primary cursor-pointer transition-all" data-alt="User photo of pesticide application equipment" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD5WOV-zm3G4YbwOn-dNYfcHaGiMeSGYIkV9zB9px3GNSe67GnrPmlBvwzN1u9_StkimknjVJkO1GKjiq86AQNaJJJ-35-4VL3apP0dMJNvKGUoJdf96imek9MEEA1lQJQXpk3C3WuAG4CwumqDrMDn1N5ygQvkltDf2L85Zy301jtgiFj3-fYvxS1dW_MuVCK4UJru9obbEqHNVQD6Ez9HTQzF78vWAUopZ-is6VtDbShxCNjb2uGnzv4MC3Nb5jwucRogC5zfFcY");'></div>
-</div>
-</div>
-<!-- Individual Review Card -->
-<div class="mt-8 space-y-4">
-<div class="p-6 bg-white dark:bg-[#102212] rounded-2xl border border-gray-100 dark:border-gray-800">
-<div class="flex justify-between items-start mb-4">
-<div class="flex items-center gap-3">
-<div class="size-10 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">JD</div>
-<div>
-<p class="font-bold">John Doe</p>
-<p class="text-xs text-gray-500 flex items-center gap-1">
-<span class="material-symbols-outlined text-xs">verified</span> Verified Purchaser
+                        </div>
+                        <!-- Highlights -->
+                        <div class="mt-8 grid grid-cols-2 gap-4">
+                            <div
+                                class="flex items-start gap-3 p-3 bg-white dark:bg-[#102212] rounded-lg border border-gray-100 dark:border-gray-800">
+                                <span class="material-symbols-outlined text-primary">verified_user</span>
+                                <div>
+                                    <p class="text-sm font-bold">Safe for Bees</p>
+                                    <p class="text-xs text-gray-500">Non-toxic to pollinators</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-start gap-3 p-3 bg-white dark:bg-[#102212] rounded-lg border border-gray-100 dark:border-gray-800">
+                                <span class="material-symbols-outlined text-primary">local_shipping</span>
+                                <div>
+                                    <p class="text-sm font-bold">Fast Delivery</p>
+                                    <p class="text-xs text-gray-500">2-3 business days</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Usage Instructions Section -->
+                <section
+                    class="mb-12 bg-white dark:bg-[#102212] rounded-2xl p-8 border border-[#e7f3e8] dark:border-[#1e3a20]">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="material-symbols-outlined text-primary text-3xl">menu_book</span>
+                        <h2 class="text-2xl font-bold">Usage Instructions and Mixing Ratios</h2>
+                    </div>
+                    <div class="overflow-x-auto mb-8">
+                        <table class="w-full border-collapse">
+                            <thead>
+                                <tr class="bg-[#e7f3e8] dark:bg-[#1e3a20]">
+                                    <th class="p-4 text-left font-bold rounded-tl-lg">Crop Type</th>
+                                    <th class="p-4 text-left font-bold">Mixing Ratio (ml/L)</th>
+                                    <th class="p-4 text-left font-bold">Application Frequency</th>
+                                    <th class="p-4 text-left font-bold rounded-tr-lg">Pre-Harvest Interval</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 dark:divide-gray-800">
+                                <tr>
+                                    <td class="p-4 font-medium">Vegetables (Leafy)</td>
+                                    <td class="p-4">2.5 ml / Liter</td>
+                                    <td class="p-4">Every 14 days</td>
+                                    <td class="p-4">3 Days</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-medium">Fruit Trees</td>
+                                    <td class="p-4">5.0 ml / Liter</td>
+                                    <td class="p-4">Every 21 days</td>
+                                    <td class="p-4">7 Days</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-medium">Cereal Crops</td>
+                                    <td class="p-4">1.5 ml / Liter</td>
+                                    <td class="p-4">Once per season</td>
+                                    <td class="p-4">15 Days</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Safety Icons -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                        <div
+                            class="flex flex-col items-center text-center p-4 bg-background-light dark:bg-background-dark rounded-xl">
+                            <span class="material-symbols-outlined text-4xl text-primary mb-2">back_hand</span>
+                            <p class="font-bold text-sm">Wear Gloves</p>
+                            <p class="text-xs text-gray-500">Avoid direct skin contact</p>
+                        </div>
+                        <div
+                            class="flex flex-col items-center text-center p-4 bg-background-light dark:bg-background-dark rounded-xl">
+                            <span class="material-symbols-outlined text-4xl text-primary mb-2">masks</span>
+                            <p class="font-bold text-sm">Use Mask</p>
+                            <p class="text-xs text-gray-500">Protect from inhalation</p>
+                        </div>
+                        <div
+                            class="flex flex-col items-center text-center p-4 bg-background-light dark:bg-background-dark rounded-xl">
+                            <span class="material-symbols-outlined text-4xl text-primary mb-2">thermostat</span>
+                            <p class="font-bold text-sm">Cool Storage</p>
+                            <p class="text-xs text-gray-500">Keep below 25°C</p>
+                        </div>
+                        <div
+                            class="flex flex-col items-center text-center p-4 bg-background-light dark:bg-background-dark rounded-xl">
+                            <span class="material-symbols-outlined text-4xl text-primary mb-2">science</span>
+                            <p class="font-bold text-sm">Dilution Only</p>
+                            <p class="text-xs text-gray-500">Do not use concentrated</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Reviews Section -->
+                <section class="mb-12">
+                    <div class="flex items-center justify-between mb-8 px-4">
+                        <h2 class="text-2xl font-bold">Customer Reviews</h2>
+                        <button
+                            class="bg-[#e7f3e8] dark:bg-[#1e3a20] text-[#0d1b0f] dark:text-white px-6 py-2 rounded-lg font-bold hover:bg-primary/20 transition-colors">Write
+                            a Review</button>
+                    </div>
+                    <div
+                        class="flex flex-col md:flex-row gap-x-12 gap-y-10 p-6 bg-white dark:bg-[#102212] rounded-2xl border border-gray-100 dark:border-gray-800">
+                        <!-- Rating Summary Box -->
+                        <div class="flex flex-col gap-2 min-w-[180px]">
+                            <p
+                                class="text-[#0d1b0f] dark:text-white text-6xl font-black leading-tight tracking-[-0.033em]">
+                                4.8</p>
+                            <div class="flex gap-1 text-primary">
+                                <span class="material-symbols-outlined material-symbols-fill">star</span>
+                                <span class="material-symbols-outlined material-symbols-fill">star</span>
+                                <span class="material-symbols-outlined material-symbols-fill">star</span>
+                                <span class="material-symbols-outlined material-symbols-fill">star</span>
+                                <span class="material-symbols-outlined material-symbols-fill">star</span>
+                            </div>
+                            <p class="text-base font-medium text-gray-500">124 reviews</p>
+                        </div>
+                        <!-- Progress Bars -->
+                        <div class="grid flex-1 grid-cols-[20px_1fr_40px] items-center gap-y-3">
+                            <p class="text-sm font-medium">5</p>
+                            <div class="flex h-2.5 flex-1 overflow-hidden rounded-full bg-[#cfe7d1] dark:bg-[#1e3a20]">
+                                <div class="rounded-full bg-primary" style="width: 90%;"></div>
+                            </div>
+                            <p class="text-[#4c9a52] text-sm font-bold text-right">90%</p>
+                            <p class="text-sm font-medium">4</p>
+                            <div class="flex h-2.5 flex-1 overflow-hidden rounded-full bg-[#cfe7d1] dark:bg-[#1e3a20]">
+                                <div class="rounded-full bg-primary" style="width: 5%;"></div>
+                            </div>
+                            <p class="text-[#4c9a52] text-sm font-bold text-right">5%</p>
+                            <p class="text-sm font-medium">3</p>
+                            <div class="flex h-2.5 flex-1 overflow-hidden rounded-full bg-[#cfe7d1] dark:bg-[#1e3a20]">
+                                <div class="rounded-full bg-primary" style="width: 2%;"></div>
+                            </div>
+                            <p class="text-[#4c9a52] text-sm font-bold text-right">2%</p>
+                            <p class="text-sm font-medium">2</p>
+                            <div class="flex h-2.5 flex-1 overflow-hidden rounded-full bg-[#cfe7d1] dark:bg-[#1e3a20]">
+                                <div class="rounded-full bg-primary" style="width: 1%;"></div>
+                            </div>
+                            <p class="text-[#4c9a52] text-sm font-bold text-right">1%</p>
+                            <p class="text-sm font-medium">1</p>
+                            <div class="flex h-2.5 flex-1 overflow-hidden rounded-full bg-[#cfe7d1] dark:bg-[#1e3a20]">
+                                <div class="rounded-full bg-primary" style="width: 2%;"></div>
+                            </div>
+                            <p class="text-[#4c9a52] text-sm font-bold text-right">2%</p>
+                        </div>
+                    </div>
+                    <!-- Review Photos Gallery -->
+                    <div class="mt-8">
+                        <h3 class="font-bold mb-4 px-4">Photos from farmers</h3>
+                        <div class="grid grid-cols-4 md:grid-cols-8 gap-3 px-4">
+                            <div class="aspect-square rounded-lg bg-cover bg-center border-2 border-transparent hover:border-primary cursor-pointer transition-all"
+                                data-alt="User photo of treated corn field"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDhLkPfzgUO-hdTFJHHTJEu-D46RO6UhwmZHgCyua3A2fXDzxtHhEVhQ9U4z5sylFbY1WKoCFNhFbHCSYBJqVDKR2efmZTNsirTBS0jMblUXVfvd8LgVndpSSi1ssvSr9jz4ZvFww1TCvsaFuWuQTfsn6DVP8Qsn_N6abRKhKuAYPdEubcmtUMTAVgS8EaZ6suDlIEcSLyTdDEn9tqYI4A_z_xSRQ5X4p2XhuUBHibjj-txv6TASbPVYg1GdpNSK-P7c1E44UkA1Kk");'>
+                            </div>
+                            <div class="aspect-square rounded-lg bg-cover bg-center border-2 border-transparent hover:border-primary cursor-pointer transition-all"
+                                data-alt="User photo of large organic garden"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBK_v_snKTEM-XU2zoTdH5YjecaNSGemiiiU7ti_uvLpifJyqYypcYH7jTYbscVzkk6_4-qGEC1qEl9yTYU00Y_KUYRUaaINc3ziVMH08lWDkoQrzkpme__rd5Hh0SZsxXQnwztnRaPa1od-e7fmmPEhHnDSX1YDc9RBjimVLRqMiPGl7EyuhrOF4-hNPfzeASsWPdlticUHPqVDMd2B_3VVbYneqNurV0jd1dVVkJCzl8m3NF0Ll0ZoD0Tp8khfpjNJgjvZ4vA48E");'>
+                            </div>
+                            <div class="aspect-square rounded-lg bg-cover bg-center border-2 border-transparent hover:border-primary cursor-pointer transition-all"
+                                data-alt="User photo of healthy tomato plants"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuArveL3FD8vwcalmBk8uVCiCOoNFisjuXO1pJsYtEMZuD4Xi76b__lpBoofFhmwGjey9QT-BSnOuJxRoSWAlF1_wd_E5zaGF1BbuoCXK4-ArPFHgHX2dkn9lG-NwJkYGHzUrIaz_EKmUXA_aTIeJ7QGYGEwytbRJ-VPTDTAumV0w92rpAn7RXihsEWx80tulDqj9gQCJU5qHA4DdjEtbR6HK32Eu_34y7I23Rc4kQAhFZB_iGRvl_0soLlzPcw8iiQQERESMaZzGHU");'>
+                            </div>
+                            <div class="aspect-square rounded-lg bg-cover bg-center border-2 border-transparent hover:border-primary cursor-pointer transition-all"
+                                data-alt="User photo of pesticide application equipment"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD5WOV-zm3G4YbwOn-dNYfcHaGiMeSGYIkV9zB9px3GNSe67GnrPmlBvwzN1u9_StkimknjVJkO1GKjiq86AQNaJJJ-35-4VL3apP0dMJNvKGUoJdf96imek9MEEA1lQJQXpk3C3WuAG4CwumqDrMDn1N5ygQvkltDf2L85Zy301jtgiFj3-fYvxS1dW_MuVCK4UJru9obbEqHNVQD6Ez9HTQzF78vWAUopZ-is6VtDbShxCNjb2uGnzv4MC3Nb5jwucRogC5zfFcY");'>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Individual Review Card -->
+                    <div class="mt-8 space-y-4">
+                        <div
+                            class="p-6 bg-white dark:bg-[#102212] rounded-2xl border border-gray-100 dark:border-gray-800">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="size-10 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">
+                                        JD</div>
+                                    <div>
+                                        <p class="font-bold">John Doe</p>
+                                        <p class="text-xs text-gray-500 flex items-center gap-1">
+                                            <span class="material-symbols-outlined text-xs">verified</span> Verified
+                                            Purchaser
                                         </p>
-</div>
-</div>
-<div class="flex text-primary">
-<span class="material-symbols-outlined material-symbols-fill text-sm">star</span>
-<span class="material-symbols-outlined material-symbols-fill text-sm">star</span>
-<span class="material-symbols-outlined material-symbols-fill text-sm">star</span>
-<span class="material-symbols-outlined material-symbols-fill text-sm">star</span>
-<span class="material-symbols-outlined material-symbols-fill text-sm">star</span>
-</div>
-</div>
-<p class="text-sm leading-relaxed mb-4">
-                                This product worked wonders on my tomato blight. I was worried about using harsh chemicals near my bees, but EcoShield Pro was effective and I haven't seen any negative impact on the local pollinators. Highly recommend for any organic farmer!
+                                    </div>
+                                </div>
+                                <div class="flex text-primary">
+                                    <span class="material-symbols-outlined material-symbols-fill text-sm">star</span>
+                                    <span class="material-symbols-outlined material-symbols-fill text-sm">star</span>
+                                    <span class="material-symbols-outlined material-symbols-fill text-sm">star</span>
+                                    <span class="material-symbols-outlined material-symbols-fill text-sm">star</span>
+                                    <span class="material-symbols-outlined material-symbols-fill text-sm">star</span>
+                                </div>
+                            </div>
+                            <p class="text-sm leading-relaxed mb-4">
+                                This product worked wonders on my tomato blight. I was worried about using harsh
+                                chemicals near my bees, but EcoShield Pro was effective and I haven't seen any negative
+                                impact on the local pollinators. Highly recommend for any organic farmer!
                             </p>
-<div class="flex items-center gap-4 text-xs text-gray-400">
-<span>2 weeks ago</span>
-<button class="flex items-center gap-1 hover:text-primary"><span class="material-symbols-outlined text-sm">thumb_up</span> Helpful (12)</button>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-white dark:bg-[#102212] border-t border-[#e7f3e8] dark:border-[#1e3a20] py-12 px-10">
-<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
-<div class="flex flex-col gap-4">
-<div class="flex items-center gap-2 text-primary">
-<span class="material-symbols-outlined text-2xl">agriculture</span>
-<h2 class="text-lg font-bold text-[#0d1b0f] dark:text-white">AgroConsult</h2>
-</div>
-<p class="text-sm text-gray-500">Professional agricultural solutions and consultation for the modern farmer.</p>
-</div>
-<div>
-<h4 class="font-bold mb-4">Quick Links</h4>
-<ul class="text-sm space-y-2 text-gray-500">
-<li><a class="hover:text-primary" href="#">Shop Pesticides</a></li>
-<li><a class="hover:text-primary" href="#">Safety Database</a></li>
-<li><a class="hover:text-primary" href="#">Book Consultation</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold mb-4">Support</h4>
-<ul class="text-sm space-y-2 text-gray-500">
-<li><a class="hover:text-primary" href="#">Shipping Info</a></li>
-<li><a class="hover:text-primary" href="#">Return Policy</a></li>
-<li><a class="hover:text-primary" href="#">Contact Support</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold mb-4">Newsletter</h4>
-<div class="flex gap-2">
-<input class="bg-[#e7f3e8] dark:bg-[#1e3a20] border-none rounded-lg text-sm flex-1" placeholder="Email address" type="email"/>
-<button class="bg-primary text-white p-2 rounded-lg">
-<span class="material-symbols-outlined">send</span>
-</button>
-</div>
-</div>
-</div>
-<div class="max-w-[1200px] mx-auto mt-12 pt-6 border-t border-gray-100 dark:border-gray-800 text-center text-xs text-gray-400">
+                            <div class="flex items-center gap-4 text-xs text-gray-400">
+                                <span>2 weeks ago</span>
+                                <button class="flex items-center gap-1 hover:text-primary"><span
+                                        class="material-symbols-outlined text-sm">thumb_up</span> Helpful (12)</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- Footer -->
+            <footer class="bg-white dark:bg-[#102212] border-t border-[#e7f3e8] dark:border-[#1e3a20] py-12 px-10">
+                <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-2 text-primary">
+                            <span class="material-symbols-outlined text-2xl">agriculture</span>
+                            <h2 class="text-lg font-bold text-[#0d1b0f] dark:text-white">AgroConsult</h2>
+                        </div>
+                        <p class="text-sm text-gray-500">Professional agricultural solutions and consultation for the
+                            modern farmer.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-4">Quick Links</h4>
+                        <ul class="text-sm space-y-2 text-gray-500">
+                            <li><a class="hover:text-primary" href="#">Shop Pesticides</a></li>
+                            <li><a class="hover:text-primary" href="#">Safety Database</a></li>
+                            <li><a class="hover:text-primary" href="#">Book Consultation</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-4">Support</h4>
+                        <ul class="text-sm space-y-2 text-gray-500">
+                            <li><a class="hover:text-primary" href="#">Shipping Info</a></li>
+                            <li><a class="hover:text-primary" href="#">Return Policy</a></li>
+                            <li><a class="hover:text-primary" href="#">Contact Support</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-4">Newsletter</h4>
+                        <div class="flex gap-2">
+                            <input class="bg-[#e7f3e8] dark:bg-[#1e3a20] border-none rounded-lg text-sm flex-1"
+                                placeholder="Email address" type="email" />
+                            <button class="bg-primary text-white p-2 rounded-lg">
+                                <span class="material-symbols-outlined">send</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="max-w-[1200px] mx-auto mt-12 pt-6 border-t border-gray-100 dark:border-gray-800 text-center text-xs text-gray-400">
                     © 2024 AgroConsult. All Rights Reserved.
                 </div>
-</footer>
-</div>
-</div>
-</body></html>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
