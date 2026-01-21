@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AgroConsult - Product Listing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec25",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102212",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+body {
+    font-family: "Manrope", sans-serif
+    }
+.checkbox-custom:checked {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBUPrQUbw0NRRblvTDEcmjWrcthbzJdcI7FcM6aEX2f3Glsid1_7wqVkk-iF5h0KD_mfkktCC0G0syTpp8rcbScfKJdmJ1lyWRUilSP2xsfjKVq0ac98eod-9aYY8PI2atSpVxp25Xa11G9xEVbP6uHeaYJqqmTN2BpZ-3OcIGWECuSBAxeskzW4sVvDVG5ChngwpuuDuNBpiNdjdgAMtR3NjFsly_KJ-T18WR8A1kD8uRdrZ3Nj6tUT8_pnwcBsyoKwrL-tuld5Po)
+    }</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0d1b0f] dark:text-white min-h-screen">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7f3e8] dark:border-[#2a4d2e] px-10 py-3 bg-white dark:bg-[#162a18]">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-[#0d1b0f] dark:text-primary">
+<div class="size-8">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-[#0d1b0f] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">กิจเกษตร</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-[#0d1b0f] dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Agrochemicals</a>
+<a class="text-[#0d1b0f] dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Consultation</a>
+<a class="text-[#0d1b0f] dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Equipment</a>
+<a class="text-[#0d1b0f] dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4 max-w-md">
+<label class="flex flex-col min-w-40 !h-10 w-full max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full overflow-hidden">
+<div class="text-[#4c9a52] flex border-none bg-[#e7f3e8] dark:bg-[#203a22] items-center justify-center pl-4">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-[#e7f3e8] dark:bg-[#203a22] text-[#0d1b0f] dark:text-white focus:ring-0 h-full placeholder:text-[#4c9a52] px-4 text-base font-normal" placeholder="Search products..." value=""/>
+</div>
+</label>
+<div class="flex gap-2">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-[#e7f3e8] dark:bg-[#203a22] text-[#0d1b0f] dark:text-white hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-[#e7f3e8] dark:bg-[#203a22] text-[#0d1b0f] dark:text-white hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 flex max-w-[1440px] mx-auto w-full px-6 py-8 gap-8">
+<!-- Sidebar Filters -->
+<aside class="w-64 shrink-0 hidden lg:block sticky top-8 h-fit">
+<div class="flex flex-col gap-6 bg-white dark:bg-[#162a18] p-5 rounded-xl border border-[#e7f3e8] dark:border-[#2a4d2e] shadow-sm">
+<div class="flex flex-col">
+<h1 class="text-[#0d1b0f] dark:text-white text-lg font-bold">Filters</h1>
+<p class="text-[#4c9a52] text-xs font-medium">Refine your search</p>
+</div>
+<!-- Filter Section: Crop Type -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-2 text-[#0d1b0f] dark:text-white">
+<span class="material-symbols-outlined text-primary text-xl">potted_plant</span>
+<p class="text-sm font-bold">Crop Type</p>
+</div>
+<div class="flex flex-col gap-1">
+<label class="flex items-center gap-3 px-2 py-1.5 rounded-lg bg-[#e7f3e8] dark:bg-primary/20 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<p class="text-xs font-semibold text-[#0d1b0f] dark:text-white">All Crops</p>
+</label>
+<label class="flex items-center gap-3 px-2 py-1.5 rounded-lg hover:bg-gray-50 dark:hover:bg-white/5 cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-gray-400 text-lg">spa</span>
+<a href="WithFilters2.html" class="text-xs font-medium text-gray-700 dark:text-gray-300">Rice &amp; Grains</a>
+</label>
+<label class="flex items-center gap-3 px-2 py-1.5 rounded-lg hover:bg-gray-50 dark:hover:bg-white/5 cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-gray-400 text-lg">nutrition</span>
+<p class="text-xs font-medium text-gray-700 dark:text-gray-300">Fruits &amp; Orchards</p>
+</label>
+<label class="flex items-center gap-3 px-2 py-1.5 rounded-lg hover:bg-gray-50 dark:hover:bg-white/5 cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-gray-400 text-lg">eco</span>
+<p class="text-xs font-medium text-gray-700 dark:text-gray-300">Vegetables</p>
+</label>
+</div>
+</div>
+<!-- Filter Section: Price Range -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-2 text-[#0d1b0f] dark:text-white">
+<span class="material-symbols-outlined text-primary text-xl">payments</span>
+<p class="text-sm font-bold">Price Range</p>
+</div>
+<div class="px-2 pt-2 pb-6">
+<div class="relative flex w-full h-1 rounded-full bg-[#cfe7d1] dark:bg-[#2a4d2e]">
+<div class="absolute left-[15%] right-[30%] h-full bg-primary"></div>
+<div class="absolute left-[15%] -top-1.5 size-4 rounded-full bg-primary border-2 border-white dark:border-[#162a18] shadow-md cursor-pointer"></div>
+<div class="absolute right-[30%] -top-1.5 size-4 rounded-full bg-primary border-2 border-white dark:border-[#162a18] shadow-md cursor-pointer"></div>
+</div>
+<div class="flex justify-between mt-3 text-[10px] font-bold text-gray-500 dark:text-gray-400">
+<span>$10</span>
+<span>$500+</span>
+</div>
+</div>
+</div>
+<!-- Filter Section: Brands -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-2 text-[#0d1b0f] dark:text-white">
+<span class="material-symbols-outlined text-primary text-xl">label</span>
+<p class="text-sm font-bold">Brand</p>
+</div>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="checkbox-custom h-4 w-4 rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary/50 transition-all" type="checkbox"/>
+<span class="text-xs font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary">Bayer Crop Science</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="checkbox-custom h-4 w-4 rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary/50 transition-all" type="checkbox"/>
+<span class="text-xs font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary">Syngenta</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="checkbox-custom h-4 w-4 rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary/50 transition-all" type="checkbox"/>
+<span class="text-xs font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary">BASF Agricultural</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="checkbox-custom h-4 w-4 rounded border-gray-300 dark:border-gray-600 text-primary focus:ring-primary/50 transition-all" type="checkbox"/>
+<span class="text-xs font-medium text-gray-700 dark:text-gray-300 group-hover:text-primary">Corteva Agriscience</span>
+</label>
+</div>
+</div>
+<button class="w-full bg-primary text-black font-bold text-sm py-2 rounded-lg hover:opacity-90 transition-opacity mt-2">
+                        Apply Filters
+                    </button>
+</div>
+</aside>
+<!-- Product Listing -->
+<div class="flex-1">
+<!-- Listing Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+<div class="flex flex-wrap items-center gap-2">
+<a class="text-[#4c9a52] dark:text-primary/70 text-sm font-medium hover:underline" href="#">Home</a>
+<span class="text-[#4c9a52] dark:text-primary/70 text-sm font-medium">/</span>
+<span class="text-[#0d1b0f] dark:text-white text-sm font-bold">Agrochemicals</span>
+</div>
+<div class="flex items-center gap-4">
+<p class="text-xs text-gray-500 dark:text-gray-400 whitespace-nowrap">Showing 1-12 of 84 products</p>
+<div class="relative group">
+<button class="flex items-center gap-2 px-4 py-2 bg-white dark:bg-[#162a18] border border-[#e7f3e8] dark:border-[#2a4d2e] rounded-lg text-sm font-semibold shadow-sm">
+                                Sort: Most Popular
+                                <span class="material-symbols-outlined text-lg">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+<!-- Product Card 1 -->
+<div class="group relative flex flex-col bg-white dark:bg-[#162a18] rounded-xl border border-[#e7f3e8] dark:border-[#2a4d2e] overflow-hidden shadow-sm hover:shadow-md hover:border-primary/30 transition-all">
+<div class="relative aspect-square overflow-hidden bg-gray-100 dark:bg-[#203a22]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Bottle of professional liquid herbicide for crops" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNmIBkswiRwdnYLqki6JMIOEARNDwU7uN0Kgz37r87-8xxBvqK7qNtdm32PUV3rEc8BlMcmhIBEfbAcx_7WhM0uIyQoKjTNDZUleFDNPA_feo8jv7FdnxIaH-M7l9oafSSEs6NjzFzHouZ1iL44wUUpKbrAnBj8tRsS3Rx8kBeyIRPm_-Masi8uuvZ_mgK40PCziUftLTSdOBHMnNJwaEoHXrU_sYi1kDwkSOFw0nh2Z-0Sz2LKMilt-ayJZQ0v5vYGUE7deAt69Q"/>
+<span class="absolute top-3 left-3 px-2 py-1 bg-primary text-black text-[10px] font-extrabold rounded-md uppercase">Top Rated</span>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="px-6 py-2 bg-white text-black font-bold rounded-full text-sm hover:bg-primary transition-colors">Quick View</button>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<p class="text-[10px] font-bold text-primary uppercase tracking-wider">Herbicide • Rice</p>
+<h3 class="text-[#0d1b0f] dark:text-white font-bold text-base leading-tight">Glyphos Elite 480SL</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400 mb-3">Broad-spectrum systematic herbicide for weed control.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xl font-extrabold text-[#0d1b0f] dark:text-white">$45.00</span>
+<button class="p-2 rounded-full bg-[#e7f3e8] dark:bg-[#203a22] text-primary hover:bg-primary hover:text-black transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group relative flex flex-col bg-white dark:bg-[#162a18] rounded-xl border border-[#e7f3e8] dark:border-[#2a4d2e] overflow-hidden shadow-sm hover:shadow-md hover:border-primary/30 transition-all">
+<div class="relative aspect-square overflow-hidden bg-gray-100 dark:bg-[#203a22]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Container of concentrated agricultural fertilizer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhFLZVBe9zR4hvTA4kLM_6ZuYe7KWtHDnD5AeHIkuW7a-rCmvpzFH9cpHr29Ncy6TYmIcoPXJHDS85D8akw4526L40UFlSjZtcBw4tSOaAjfNAQM9d4X2dJ_lnESpiThtUjH071rWc7G9Kd31FwEscf0cuOkAeT7i9UYwvsCfzrnrBAOED-wEq5eQz74ruYL18xqYdaquIhOlLntOR5MscxFyt_gvkkxWMScZnJB3B03I3va7aAZ7ySrYb6vEuXeIjLAf6dgUZD1I"/>
+<span class="absolute top-3 left-3 px-2 py-1 bg-blue-500 text-white text-[10px] font-extrabold rounded-md uppercase">Best Value</span>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="px-6 py-2 bg-white text-black font-bold rounded-full text-sm hover:bg-primary transition-colors">Quick View</button>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<p class="text-[10px] font-bold text-primary uppercase tracking-wider">Fungicide • Vegetables</p>
+<h3 class="text-[#0d1b0f] dark:text-white font-bold text-base leading-tight">CopperMax Fungicide</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400 mb-3">Effective protection against blight and mildews.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xl font-extrabold text-[#0d1b0f] dark:text-white">$32.50</span>
+<button class="p-2 rounded-full bg-[#e7f3e8] dark:bg-[#203a22] text-primary hover:bg-primary hover:text-black transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group relative flex flex-col bg-white dark:bg-[#162a18] rounded-xl border border-[#e7f3e8] dark:border-[#2a4d2e] overflow-hidden shadow-sm hover:shadow-md hover:border-primary/30 transition-all">
+<div class="relative aspect-square overflow-hidden bg-gray-100 dark:bg-[#203a22]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Box of organic granular pest control" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp9wjgtWgzcRKDmpOq7RvVhoYOc7-_Wef1HehFLszrNhQaq_KcnP9xcbPwmq3RSp691cvTJdExV0sxuKx6Z4kZryZVvMiUy6E-zRP-cum9JPPuw6Tb7AqcP-Rnw-1FREEMEq1ANL44ztdYavORxJwZNIR330D7Fi0_Oa5_DyTJVOUYtoHmZIYNJ9fathfyXX5ynNZM5DwhgTpjYin8L_gI96rTU5NXqS9Ni_uE1GTE01s3Q6YBbO2Y9WzmGSRNJaCJdAKZGwH0o0g"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="px-6 py-2 bg-white text-black font-bold rounded-full text-sm hover:bg-primary transition-colors">Quick View</button>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<p class="text-[10px] font-bold text-primary uppercase tracking-wider">Insecticide • Fruit</p>
+<h3 class="text-[#0d1b0f] dark:text-white font-bold text-base leading-tight">Bayer Movento 240SC</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400 mb-3">Two-way systemic protection for fruit trees.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xl font-extrabold text-[#0d1b0f] dark:text-white">$89.99</span>
+<button class="p-2 rounded-full bg-[#e7f3e8] dark:bg-[#203a22] text-primary hover:bg-primary hover:text-black transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group relative flex flex-col bg-white dark:bg-[#162a18] rounded-xl border border-[#e7f3e8] dark:border-[#2a4d2e] overflow-hidden shadow-sm hover:shadow-md hover:border-primary/30 transition-all">
+<div class="relative aspect-square overflow-hidden bg-gray-100 dark:bg-[#203a22]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close up of chemical pellets for soil" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRQF42MZrkDbvcYiiL8HqQyXpiB1HnaRcOMlKTg1YfS-LA6rRaDloKxYIulkNpAxOnjoKfhhzmBcIcZOSr0eq8nRzMcsf0HQ5aAOQUh0BFo7dau0M9bjhtlFLHjgglTGfb0j5SQWj_vfjtHKxdHB1i19CUKQeEdi8QBLOapOFXCks46wzq4TdqLqA9EMy6CS-pxOq8GkuINqRxVwGtb5efunRt2QQz1crqbVj38Oez0aO0zW1jQszNAWBeZe92aeVcHJNfFc8UBcQ"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="px-6 py-2 bg-white text-black font-bold rounded-full text-sm hover:bg-primary transition-colors">Quick View</button>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<p class="text-[10px] font-bold text-primary uppercase tracking-wider">Growth Regulator • Rice</p>
+<h3 class="text-[#0d1b0f] dark:text-white font-bold text-base leading-tight">BioBoost Plant Growth</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400 mb-3">Maximizes yield potential through root enhancement.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xl font-extrabold text-[#0d1b0f] dark:text-white">$58.00</span>
+<button class="p-2 rounded-full bg-[#e7f3e8] dark:bg-[#203a22] text-primary hover:bg-primary hover:text-black transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group relative flex flex-col bg-white dark:bg-[#162a18] rounded-xl border border-[#e7f3e8] dark:border-[#2a4d2e] overflow-hidden shadow-sm hover:shadow-md hover:border-primary/30 transition-all">
+<div class="relative aspect-square overflow-hidden bg-gray-100 dark:bg-[#203a22]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A worker spraying agricultural fields" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsniyF7yxOtnfFEXCBRMkzUjwuO5EgfxzKjBZ2XlETo4RghegD0HEPJH0xs-fjvhyfRZhv3OoNJv2LlRT47eP9R_vAW0oj3qI5cN_KCmWsgRQ6r50OzQsyGYgM5Vx7XjCzVgo8LF65gHs5itqgY-cHMozGaRG6kAxA1vdND4hYVNMMBaNnhw6zEfTQgHhamGrfC38dmEZ9KDk1fp7sjjpB9H5SqGpRKa1z5WRL2J_GMk1PBk_g9Y_IxbqX-SbM0r2PrnV2WrVWx24"/>
+<span class="absolute top-3 left-3 px-2 py-1 bg-red-500 text-white text-[10px] font-extrabold rounded-md uppercase">Sale -15%</span>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="px-6 py-2 bg-white text-black font-bold rounded-full text-sm hover:bg-primary transition-colors">Quick View</button>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<p class="text-[10px] font-bold text-primary uppercase tracking-wider">Specialty • All Crops</p>
+<h3 class="text-[#0d1b0f] dark:text-white font-bold text-base leading-tight">Syngenta Axial One</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400 mb-3">Advanced post-emergence weed control solution.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex flex-col">
+<span class="text-xl font-extrabold text-[#0d1b0f] dark:text-white">$112.20</span>
+<span class="text-[10px] text-red-500 line-through font-bold">$132.00</span>
+</div>
+<button class="p-2 rounded-full bg-[#e7f3e8] dark:bg-[#203a22] text-primary hover:bg-primary hover:text-black transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group relative flex flex-col bg-white dark:bg-[#162a18] rounded-xl border border-[#e7f3e8] dark:border-[#2a4d2e] overflow-hidden shadow-sm hover:shadow-md hover:border-primary/30 transition-all">
+<div class="relative aspect-square overflow-hidden bg-gray-100 dark:bg-[#203a22]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Clear spray bottle for farm use" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZV7Xs2Vjlx0xVxAVV-66Zux5bbYaDc_RjL0o-UaES0KWRqHTcI8oBUZFG7YkchrPu9ky8YWpVyYz8uO8txUEuCeGm9T2kc7QuKr9qacVbJicodt303dePWsenyphCsnUkG1IcXnhcHB9U8dYi1FMs2z-CjqwfS6HDMuqbjNZuRdVS5pUCdT-uBTI9qhPt6sErbNUgJW8XJfD15qC2zBAf98T_H8hOyD4jlBIMZUdH1zvWoVsmjO13cnkiFfLrkxULOGBD3ymZOKc"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="px-6 py-2 bg-white text-black font-bold rounded-full text-sm hover:bg-primary transition-colors">Quick View</button>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<p class="text-[10px] font-bold text-primary uppercase tracking-wider">Organic • Vegetables</p>
+<h3 class="text-[#0d1b0f] dark:text-white font-bold text-base leading-tight">Neem-Shield Organic</h3>
+<p class="text-xs text-gray-500 dark:text-gray-400 mb-3">100% cold-pressed neem oil for natural pest control.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xl font-extrabold text-[#0d1b0f] dark:text-white">$24.95</span>
+<button class="p-2 rounded-full bg-[#e7f3e8] dark:bg-[#203a22] text-primary hover:bg-primary hover:text-black transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="flex items-center justify-center gap-2 mt-12 pb-12">
+<button class="flex items-center justify-center h-10 w-10 rounded-lg border border-[#e7f3e8] dark:border-[#2a4d2e] hover:bg-primary/10">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="flex items-center justify-center h-10 w-10 rounded-lg bg-primary text-black font-bold">1</button>
+<button class="flex items-center justify-center h-10 w-10 rounded-lg border border-[#e7f3e8] dark:border-[#2a4d2e] hover:bg-primary/10">2</button>
+<button class="flex items-center justify-center h-10 w-10 rounded-lg border border-[#e7f3e8] dark:border-[#2a4d2e] hover:bg-primary/10">3</button>
+<span class="px-2 text-gray-400">...</span>
+<button class="flex items-center justify-center h-10 w-10 rounded-lg border border-[#e7f3e8] dark:border-[#2a4d2e] hover:bg-primary/10">7</button>
+<button class="flex items-center justify-center h-10 w-10 rounded-lg border border-[#e7f3e8] dark:border-[#2a4d2e] hover:bg-primary/10">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Newsletter Footer Placeholder -->
+<footer class="bg-white dark:bg-[#162a18] border-t border-[#e7f3e8] dark:border-[#2a4d2e] py-12 px-10">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+<div>
+<h4 class="text-xl font-bold mb-2">Grow smarter with our expert tips</h4>
+<p class="text-gray-500 dark:text-gray-400">Join our newsletter for weekly agrochemical guides and market trends.</p>
+</div>
+<div class="flex w-full max-w-md gap-3">
+<input class="flex-1 rounded-lg border-gray-300 dark:border-gray-600 bg-transparent focus:ring-primary focus:border-primary" placeholder="Your farm email" type="email"/>
+<button class="px-6 py-2 bg-primary text-black font-bold rounded-lg hover:opacity-90 transition-opacity">Subscribe</button>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto mt-12 pt-8 border-t border-[#e7f3e8] dark:border-[#2a4d2e] flex flex-col md:flex-row justify-between text-xs text-gray-400 gap-4">
+<p>© 2024 AgroConsult. All rights reserved for global farmers.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Terms of Service</a>
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Consultation Terms</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
